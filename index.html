@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
   
   <title>Frontend Mentor | Blog preview card</title>
 
@@ -15,62 +18,106 @@
       padding: 0;
     }
     body, html {
-      height: 100%;
       background-color: hsl(47, 88%, 63%);
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      color: hsl(0, 0%, 7%);
+      font-family: 'Figtree', sans-serif;
     }
     
     main {
       background-color: hsl(0, 0%, 100%);
-      width: 375px;
-      height: fit-content;
-      border: 1px solid white;
-      border-radius: 5%;
-      text-align: center;
-      padding-bottom: 25px;
-    }
-
-    .image {
+      width: 300px;
       padding: 20px;
+      border-radius: 15px;
+      margin: auto;
+      margin-left: 450px;
+      border: 2px solid black;
+      filter: drop-shadow(5px 5px 0);
+      font-size: 16px;
     }
 
-    .illustration {
-      max-width: fit-content;
-      max-height: fit-content;
-      border-radius: 5%;
+    h1 {
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5px;
     }
 
     button {
       background-color: hsl(47, 88%, 63%);
+      display: inline-block;
+      border-radius: 5px;
       padding: 5px;
-      font-weight: 700;
-      font-size: larger;
-      border: 1px;
-      border-radius: 7%;
+      font-weight: 800;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+ 
+    img {
+      width: 25%;
+      vertical-align: middle;
+      border-radius: 10px;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    h1:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+    }
+
+
+    .date {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .content {
+      color: hsl(0, 0%, 50%);
+      font-size: 14px;
+    }
+
+
+    .illustration {
+      width: 100%;
+    }
+
+    .author {
+      display: inline-block;
+      font-size: small;
+      font-weight: bold;
+    }
+    
+    .attribution {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      position: relative;
+      top: 300px;
+      left: -360px;
+    }
+    
   </style>
 </head>
 <body>
   <main>
-    <div class="image">
+    <div>
       <img src="assets\images\illustration-article.svg" alt="html illustration" class="illustration">
     </div>
-    <button type="button">Learning</button>
-    <p>Published 21 Dec 2023</p>
+    
+
+      <button type="button">Learning</button>
+      <p class="date">Published 21 Dec 2023</p>
+  
+    
     <h1>HTML & CSS foundations</h1>
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <p class="content">These languages are the backbone of every website, defining structure, content, and presentation.</p>
     <img src="assets\images\image-avatar.webp" alt="Greg Hooper avatar pic" class="avatar">
-    <p>Greg Hooper</p>
+    <p class="author">Greg Hooper</p>
   </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/SSGBC" target="_blank">Shane Coco</a>
   </div>
 </body>
 </html>

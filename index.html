@@ -13,10 +13,12 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    /*Universal selector used to set margin and padding across different web browsers*/
     * {
       margin: 0;
       padding: 0;
     }
+    /*Tag Selectors*/
     body, html {
       background-color: hsl(47, 88%, 63%);
       display: flex;
@@ -61,13 +63,13 @@
       vertical-align: middle;
       border-radius: 10px;
     }
-
+   /*Hover state used to turn cursor into pointer and change text color*/
     h1:hover {
       color: hsl(47, 88%, 63%);
       cursor: pointer;
     }
 
-
+   /*Class Selectors*/
     .date {
       margin: 0;
       font-size: 14px;
@@ -99,7 +101,7 @@
   </style>
 </head>
 <body>
-  <main>
+  <main><!--Main tag used for semantics to wrap content in-->
     <div>
       <img src="assets\images\illustration-article.svg" alt="html illustration" class="illustration">
     </div>
